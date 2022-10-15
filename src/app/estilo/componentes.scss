@@ -1,0 +1,109 @@
+.input-text {
+    margin-bottom: 32px;
+    width: 100%;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 8px 16px;
+    gap: 8px;
+    background: #FFFFFF;
+    border: 1px solid #E8E8EA;
+    border-radius: 18px;
+    flex: none;
+    order: 1;
+    align-self: stretch;
+    flex-grow: 0;
+}
+
+h2 {
+    font-family: 'Quicksand';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 34px;
+    line-height: 42px;
+
+    color: rgba(0, 0, 0, 0.87);
+}
+
+select {
+    background: #FFFFFF;
+    box-shadow: 0px 33px 43px rgba(0, 0, 0, 0.1), 0px 9.94853px 12.9632px rgba(0, 0, 0, 0.0651589), 0px 4.13211px 5.38427px rgba(0, 0, 0, 0.05), 0px 1.4945px 1.94738px rgba(0, 0, 0, 0.0348411);
+    border-radius: 20px;
+    font-family: 'Readex Pro';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 20px;
+    letter-spacing: 0.25px;
+    color: #475569;
+    flex: none;
+    order: 0;
+    align-self: stretch;
+    flex-grow: 0;
+    margin-bottom: 32px;
+    width: 100%;
+    padding: 8px 16px;
+    gap: 8px;
+    border: 1px solid #E8E8EA;
+}
+
+.botao-cancelar {
+    cursor: pointer;
+    background: #FFFFFF;
+    box-shadow: 0px 33px 43px rgba(0, 0, 0, 0.1), 0px 9.94853px 12.9632px rgba(0, 0, 0, 0.0651589), 0px 4.13211px 5.38427px rgba(0, 0, 0, 0.05), 0px 1.4945px 1.94738px rgba(0, 0, 0, 0.0348411);
+    border-radius: 20px;
+    border-width: 1px;
+    font-family: 'Readex Pro';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 20px;
+    display: flex;
+    align-items: center;
+    letter-spacing: 0.1px;
+    color: #2563EB;
+    flex: none;
+    order: 1;
+    flex-grow: 0;
+    padding: 4px;
+}
+
+.botao-cancelar:hover {
+    transform: scale(1.1); 
+    box-shadow: 0 5px 15px rgba(0,0,0,0.6);
+}
+
+.botao-confirmar {
+    font-family: 'Readex Pro';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 20px;
+    cursor: pointer;
+    line-height: 20px;
+    display: flex;
+    align-items: center;
+    letter-spacing: 0.1px;
+    color: #2563EB;
+    flex: none;
+    order: 1;
+    flex-grow: 0;
+    padding: 4px;
+    background: #DBEAFE;
+    border: 1px solid #2563EB;
+    border-radius: 40px;
+    flex: none;
+    order: 0;
+    align-self: stretch;
+    flex-grow: 0;
+}
+
+.botao-confirmar:hover {
+    transform: scale(1.1); 
+    box-shadow: 0 5px 15px rgba(0,0,0,0.6);
+}
+
+.erro{
+    color : red;
+}

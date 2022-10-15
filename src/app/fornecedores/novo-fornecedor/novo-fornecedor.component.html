@@ -1,0 +1,27 @@
+<div id="novo-fornecedor">
+    <div id="novo-fornecedor-cabecalho">
+        <h2>Novo fornecedor</h2>
+    </div>
+    <div id="novo-fornecedor-corpo">
+        <div id="novo-fornecedor-campos">
+            <form [formGroup]="novoFornecedor">
+                <span class="erro" *ngIf="formFornecedorInvalido('razaoSocial')">* Campo obrigatório</span>
+                <input type="text" formControlName="razaoSocial" placeholder="Razão social" class="input-text" />
+                <span class="erro" *ngIf="formFornecedorInvalido('cnpj')">* Campo obrigatório</span>
+                <input type="text" formControlName="cnpj" placeholder="Cnpj" class="input-text" />
+            </form>
+        </div>
+    </div>
+    <div id="novo-fornecedor-botoes">
+        <div id="novo-fornecedor-cancelar">
+            <button class="botao-cancelar" (click)="irParaFornecedores()">
+                cancelar
+            </button>
+        </div>
+        <div id="novo-fornecedor-confirmar">
+            <button class="botao-confirmar" (click)="salvar()">
+                confirmar
+            </button>
+        </div>
+    </div>
+</div>

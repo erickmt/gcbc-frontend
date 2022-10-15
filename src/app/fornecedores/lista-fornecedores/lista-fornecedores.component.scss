@@ -1,0 +1,95 @@
+#lista-fornecedores {
+    display: flex;
+
+    .lista-titulo-texto {
+        font-family: 'Montserrat';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 24px;
+        line-height: 132%;
+        margin-right: 60px;
+        color: #333333;
+    }
+
+    #lista-titulo {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    #input-busca {
+        background: #FFFFFF;
+        border: 1px solid #DDDDDD;
+        border-radius: 4px;
+        height: 30px;
+    }
+
+    #lista-botoes {
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+        
+
+        button {
+            background: #E5E5E5;
+            border-radius: 4px;
+            height: 30px;
+            border-style: none;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-left: 16px;
+        }
+
+        mat-icon {
+            padding-top: 3px;
+            font-size: 20px;
+        }
+    }
+}
+
+#lista-tabela {
+    min-width: 100%;
+
+    table {
+        margin-top: 32px;
+        min-width: 100%;
+
+        .td {
+            background: #FFFFFF;
+            box-shadow: inset 0px -1px 0px #E5E5E5;
+            position: absolute;
+            left: 6.67%;
+            right: 6.67%;
+            top: 14.29%;
+            bottom: 14.29%;
+
+            font-family: 'Encode Sans';
+            font-style: normal;
+            font-weight: 400;
+            font-size: 14px;
+            line-height: 20px;
+            display: flex;
+            align-items: center;
+            letter-spacing: 0.25px;
+            color: #333333;
+        }
+
+        tr {
+            height: 56px;
+
+            th {
+                background: #F5F5F5;
+                box-shadow: inset 0px -2px 0px rgba(0, 0, 0, 0.25);
+                border-radius: 0px;
+
+                font-family: 'Montserrat';
+                font-weight: 700;
+                font-size: 14px;
+                line-height: 20px;
+                letter-spacing: 0.25px;
+                color: #333333;
+            }
+        }
+    }
+}

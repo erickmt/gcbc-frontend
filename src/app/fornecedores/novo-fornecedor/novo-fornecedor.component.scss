@@ -1,0 +1,29 @@
+#novo-fornecedor {
+    margin-left: 85px;
+    margin-right: 85px;
+
+    #novo-fornecedor-cabecalho {
+        display: flex;
+    }
+    #novo-fornecedor-corpo {
+        display: flex;
+        width: 100%;
+    }
+    #novo-fornecedor-campos {
+        width: 50%;
+    }
+    #novo-fornecedor-botoes{
+        display: flex;
+        width: 50%;
+    }
+    #novo-fornecedor-cancelar{
+        width: 50%;
+        display: flex;
+        justify-content: flex-start;
+    }
+    #novo-fornecedor-confirmar{
+        width: 50%;
+        justify-content: flex-end;
+        display: flex;
+    }
+}

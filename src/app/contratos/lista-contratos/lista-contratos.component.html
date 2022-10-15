@@ -1,0 +1,40 @@
+<div id="lista-contratos">
+    <div id="lista-titulo">
+        <span class="lista-titulo-texto">contratos</span>
+        <input type="search" id="input-busca" placeholder="busque por contrato">        
+    </div>
+    <div id="lista-botoes">
+        <button>
+            <mat-icon aria-hidden="false" fontIcon="settings"></mat-icon>
+        </button>
+        <button>
+            download csv
+            <mat-icon aria-hidden="false" fontIcon="arrow_downward"></mat-icon>
+        </button>
+        <button>
+            export
+            <mat-icon aria-hidden="false" fontIcon="arrow_upward"></mat-icon>
+        </button>
+    </div>
+</div>
+
+<div id="lista-tabela">
+    <table>
+        <tr>
+            <th>Identificador</th>
+            <th>Status</th>
+            <th>Responsavel</th>
+            <th>Sede</th>
+            <th>Criado em</th>
+            <th>Alterado em</th>
+        </tr>
+        <tr *ngFor="let contrato of contratos" class="linha-tabela">
+            <td># {{contrato.id}}</td>
+            <td>{{contrato.status}}</td>
+            <td>{{contrato.responsavel}}</td>
+            <td>{{contrato.sede}}</td>
+            <td>{{contrato.criadoEm}}</td>
+            <td>{{contrato.alteradoEm}}</td>
+        </tr>
+    </table>
+</div>

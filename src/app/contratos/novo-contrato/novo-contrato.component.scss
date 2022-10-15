@@ -1,0 +1,29 @@
+#novo-contrato {
+    margin-left: 85px;
+    margin-right: 85px;
+
+    #novo-contrato-cabecalho {
+        display: flex;
+    }
+    #novo-contrato-corpo {
+        display: flex;
+        width: 100%;
+    }
+    #novo-contrato-campos {
+        width: 50%;
+    }
+    #novo-contrato-botoes{
+        display: flex;
+        width: 50%;
+    }
+    #novo-contrato-cancelar{
+        width: 50%;
+        display: flex;
+        justify-content: flex-start;
+    }
+    #novo-contrato-confirmar{
+        width: 50%;
+        justify-content: flex-end;
+        display: flex;
+    }
+}

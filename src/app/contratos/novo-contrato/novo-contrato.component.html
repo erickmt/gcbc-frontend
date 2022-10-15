@@ -1,0 +1,34 @@
+<div id="novo-contrato">
+    <div id="novo-contrato-cabecalho">
+        <h2>Novo Contrato</h2>
+    </div>
+    <div id="novo-contrato-corpo">
+        <div id="novo-contrato-campos">
+            <form [formGroup]="novoContrato">
+                <span class="erro" *ngIf="formContratoInvalido('responsavel')">* Campo obrigatório</span>
+                <input type="text" formControlName="responsavel" placeholder="Responsável" class="input-text" />
+                <span class="erro" *ngIf="formContratoInvalido('sede')">* Campo obrigatório</span>
+                <input type="text" formControlName="sede" placeholder="Sede" class="input-text" />
+                <span class="erro" *ngIf="formContratoInvalido('tipoContrato')">* Campo obrigatório</span>
+                <select formControlName="tipoContrato" id="tipoContrato">
+                    <option class="options" value="contratacao">Contratação de serviço</option>
+                    <option class="options" value="compra">Compra</option>
+                    <option class="options" value="venda">Venda</option>
+                    <option class="options" value="prestacao">Prestação de serviço</option>
+                </select>
+            </form>
+        </div>
+    </div>
+    <div id="novo-contrato-botoes">
+        <div id="novo-contrato-cancelar">
+            <button class="botao-cancelar" (click)="irParaContratos()">
+                cancelar
+            </button>
+        </div>
+        <div id="novo-contrato-confirmar">
+            <button class="botao-confirmar" (click)="salvar()">
+                confirmar
+            </button>
+        </div>
+    </div>
+</div>

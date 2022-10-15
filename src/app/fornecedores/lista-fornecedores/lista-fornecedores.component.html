@@ -1,0 +1,40 @@
+<div id="lista-fornecedores">
+    <div id="lista-titulo">
+        <span class="lista-titulo-texto">fornecedores</span>
+        <input type="search" id="input-busca" placeholder="busque por fornecedor">        
+    </div>
+    <div id="lista-botoes">
+        <button>
+            <mat-icon aria-hidden="false" fontIcon="settings"></mat-icon>
+        </button>
+        <button>
+            download csv
+            <mat-icon aria-hidden="false" fontIcon="arrow_downward"></mat-icon>
+        </button>
+        <button>
+            export
+            <mat-icon aria-hidden="false" fontIcon="arrow_upward"></mat-icon>
+        </button>
+    </div>
+</div>
+
+<div id="lista-tabela">
+    <table>
+        <tr>
+            <th>Identificador</th>
+            <th>Status</th>
+            <th>Razão Social</th>
+            <th>Cnpj</th>
+            <th>Criado em</th>
+            <th>Alterado em</th>
+        </tr>
+        <tr *ngFor="let fornecedor of fornecedores" class="linha-tabela">
+            <td># {{fornecedor.id}}</td>
+            <td>{{fornecedor.status}}</td>
+            <td>{{fornecedor.razaoSocial}}</td>
+            <td>{{fornecedor.cnpj}}</td>
+            <td>{{fornecedor.criadoEm}}</td>
+            <td>{{fornecedor.alteradoEm}}</td>
+        </tr>
+    </table>
+</div>
