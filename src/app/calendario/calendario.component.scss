@@ -1,0 +1,23 @@
+#app-calendario{
+    display: flex;
+}
+
+#calendario-body {
+    width: 550px;
+}
+
+#calendario {
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin-left: 32px;
+}
+
+#novo-evento{
+    width: 350px;
+    min-height: 100%;
+}
+
+#novo-evento-head{
+    top: 32px
+}

@@ -7,6 +7,8 @@
         <input type="search" id="input-busca" placeholder="busque por contrato">
         <mat-icon aria-hidden="false" fontIcon="notifications"></mat-icon>
         <mat-icon aria-hidden="false" fontIcon="settings"></mat-icon>
+        <a routerLink="/login" *ngIf="usuario == null">Entrar</a>
+        <a routerLink="/login" *ngIf="usuario != null">{{usuario.nome}}, sair?</a>
     </div>
 </div>
 
@@ -15,8 +17,6 @@
     <a routerLink="/contratos">Contratos</a>
     <a routerLink="/fornecedores">Fornecedores</a>
     <a routerLink="/calendario">Calendário</a>
+    <a routerLink="/usuarios" *ngIf="usuario != null">Usuários</a>
+    <a routerLink="/logs" *ngIf="usuario != null">Logs</a>
 </div>
-
-<!-- <nav>
-    <a routerLink="/home">Heroes</a>
-</nav> -->

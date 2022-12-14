@@ -1,0 +1,105 @@
+#app-usuario {
+    display: flex;
+}
+
+#usuario {
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+#novo-usuario {
+    min-height: 100%;
+}
+
+.botao-remover {
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
+}
+
+#body-lista-usuarios {
+    width: 100%;
+    margin-right: 32px;
+}
+
+#lista-usuarios {
+    display: flex;
+
+    .lista-titulo-texto {
+        font-family: 'Montserrat';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 24px;
+        line-height: 132%;
+        margin-right: 60px;
+        color: #333333;
+    }
+
+    #lista-titulo {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    #input-busca {
+        background: #FFFFFF;
+        border: 1px solid #DDDDDD;
+        border-radius: 4px;
+        height: 30px;
+    }
+
+    #lista-botoes {
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+
+
+        button {
+            background: #E5E5E5;
+            border-radius: 4px;
+            height: 30px;
+            border-style: none;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-left: 16px;
+        }
+
+        mat-icon {
+            padding-top: 3px;
+            font-size: 20px;
+        }
+    }
+}
+
+#lista-tabela {
+    min-width: 100%;
+
+    table {
+        margin-top: 32px;
+        min-width: 100%;
+
+        td {
+            text-align: center;
+            vertical-align: middle;
+        }
+
+        tr {
+            height: 56px;
+
+            th {
+                background: #F5F5F5;
+                box-shadow: inset 0px -2px 0px rgba(0, 0, 0, 0.25);
+                border-radius: 0px;
+
+                font-family: 'Montserrat';
+                font-weight: 700;
+                font-size: 14px;
+                line-height: 20px;
+                letter-spacing: 0.25px;
+                color: #333333;
+            }
+        }
+    }
+}

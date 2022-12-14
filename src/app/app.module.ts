@@ -19,6 +19,11 @@ import { CalendarioComponent } from './calendario/calendario.component';
 import { NovoContratoComponent } from './contratos/novo-contrato/novo-contrato.component';
 import { NovoFornecedorComponent } from './fornecedores/novo-fornecedor/novo-fornecedor.component';
 import { ReactiveFormsModule } from '@angular/forms';
+import { CrudCalendarioComponent } from './calendario/crud-calendario/crud-calendario.component';
+import { LoginComponent } from './login/login.component';
+import { UsuariosComponent } from './usuarios/usuarios.component';
+import { NovoUsuarioComponent } from './usuarios/novo-usuario/novo-usuario.component';
+import { LogsComponent } from './logs/logs.component';
 
 
 
@@ -35,7 +40,12 @@ import { ReactiveFormsModule } from '@angular/forms';
     ListaFornecedoresComponent,
     CalendarioComponent,
     NovoContratoComponent,
-    NovoFornecedorComponent
+    NovoFornecedorComponent,
+    CrudCalendarioComponent,
+    LoginComponent,
+    UsuariosComponent,
+    NovoUsuarioComponent,
+    LogsComponent
   ],
   imports: [
     BrowserModule,

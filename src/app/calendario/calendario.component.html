@@ -1,1 +1,12 @@
-<p>calendario works!</p>
+<div id="app-calendario">
+    <div id="novo-evento" *ngIf="usuario != null">
+        <app-crud-calendario></app-crud-calendario>
+    </div>
+    <div id="calendario">
+        <div id="calendario-body">
+            <mat-card class="demo-inline-calendar-card">
+                <mat-calendar></mat-calendar>
+            </mat-card>
+        </div>
+    </div>
+</div>

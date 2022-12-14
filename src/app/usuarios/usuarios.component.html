@@ -1,0 +1,45 @@
+<div id="app-usuario">
+    <div id="novo-usuario">
+        <app-novo-usuario></app-novo-usuario>
+    </div>
+    <div id="usuario">
+        <div id="lista-usuarios">
+            <div id="lista-titulo">
+                <span class="lista-titulo-texto">usuarios</span>
+                <input type="search" id="input-busca" placeholder="busque por usuario">
+            </div>
+            <div id="lista-botoes">
+                <button>
+                    <mat-icon aria-hidden="false" fontIcon="settings"></mat-icon>
+                </button>
+                <button>
+                    download csv
+                    <mat-icon aria-hidden="false" fontIcon="arrow_downward"></mat-icon>
+                </button>
+                <button>
+                    export
+                    <mat-icon aria-hidden="false" fontIcon="arrow_upward"></mat-icon>
+                </button>
+            </div>
+        </div>
+
+        <div id="lista-tabela">
+            <table>
+                <tr>
+                    <th width="80%">Nome</th>
+                    <th>Deletar</th>
+                </tr>
+                <tr *ngFor="let usuario of usuarios" class="linha-tabela">
+                    <td width="80%">
+                        {{usuario.nome}}
+                    </td>
+                    <td>
+                        <button class="botao-remover" (click)="remover(usuario)">
+                            <mat-icon aria-hidden="false" fontIcon="delete_outline" class="delete-icon"></mat-icon>
+                        </button>
+                    </td>
+                </tr>
+            </table>
+        </div>
+    </div>
+</div>

@@ -6,6 +6,9 @@ import { FornecedoresComponent } from './fornecedores/fornecedores.component';
 import { CalendarioComponent } from './calendario/calendario.component';
 import { NovoContratoComponent } from './contratos/novo-contrato/novo-contrato.component';
 import { NovoFornecedorComponent } from './fornecedores/novo-fornecedor/novo-fornecedor.component';
+import { LoginComponent } from './login/login.component';
+import { UsuariosComponent } from './usuarios/usuarios.component';
+import { LogsComponent } from './logs/logs.component';
 
 const routes: Routes = [
   { path: '', component: HomeComponent },
@@ -15,6 +18,9 @@ const routes: Routes = [
   { path: 'fornecedores/novo', component: NovoFornecedorComponent },
   { path: 'fornecedores', component: FornecedoresComponent },
   { path: 'calendario', component: CalendarioComponent },
+  { path: 'usuarios', component: UsuariosComponent },
+  { path: 'login', component: LoginComponent, data: { menu: false } },
+  { path: 'logs', component: LogsComponent }
 ];
 
 @NgModule({

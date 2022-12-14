@@ -1,0 +1,36 @@
+<div id="lista-logs">
+    <div id="lista-titulo">
+        <span class="lista-titulo-texto">logs</span>
+        <input type="search" id="input-busca" placeholder="busque por log">        
+    </div>
+    <div id="lista-botoes">
+        <button>
+            <mat-icon aria-hidden="false" fontIcon="settings"></mat-icon>
+        </button>
+        <button>
+            download csv
+            <mat-icon aria-hidden="false" fontIcon="arrow_downward"></mat-icon>
+        </button>
+        <button>
+            export
+            <mat-icon aria-hidden="false" fontIcon="arrow_upward"></mat-icon>
+        </button>
+    </div>
+</div>
+
+<div id="lista-tabela">
+    <table>
+        <tr>
+            <th width="15%">Id</th>
+            <th width="15%">Data</th>
+            <th width="20%">Usuário</th>
+            <th width="50%">Detalhes</th>
+        </tr>
+        <tr *ngFor="let log of logs" class="linha-tabela">
+            <td width="15%"># {{log.id}}</td>
+            <td width="15%">{{log.data}}</td>
+            <td width="20%">{{log.usuario}}</td>
+            <td width="50%">{{log.descricao}}</td>
+        </tr>
+    </table>
+</div>

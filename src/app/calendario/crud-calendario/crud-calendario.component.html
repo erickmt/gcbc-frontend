@@ -1,0 +1,43 @@
+<div id="crud-evento">
+    <form [formGroup]="novoEvento">
+        <div id="titulo-evento">
+            <label>título</label>
+            <input type="text" formControlName="titulo" maxlength="20" />
+            <span class="erro" *ngIf="formEventoInvalido('titulo')">* Campo obrigatório</span>
+        </div>
+
+        <div id="data-evento">
+            <label>data</label>
+            <input type="date" formControlName="data" maxlength="20" />
+            <span class="erro" *ngIf="formEventoInvalido('data')">* Campo obrigatório</span>
+        </div>
+
+        <div id="tipo-evento">
+            <label for="tipo">tipo</label>
+            <select formControlName="tipo">
+                <option value="vermelho">vermelho</option>
+                <option value="verde">verde</option>
+                <option value="azul">azul</option>
+            </select>
+            <span class="erro" *ngIf="formEventoInvalido('tipo')">* Campo obrigatório</span>
+        </div>
+    </form>
+
+    <div id="novo">
+        <button id="botao-criar-novo" (click)="salvar()">
+            <mat-icon aria-hidden="false" fontIcon="add" class="add-icon"></mat-icon>
+            criar novo
+        </button>
+    </div>
+
+    <div class="eventos-cadastrados" *ngFor="let evento of eventos" ngClass="{{evento.tipo}}">
+        <div>
+            <label>{{evento.data}} - {{evento.titulo}}</label>
+        </div>
+        <div class="remove-evento">
+            <button class="botao-remover" (click)="remover(evento)">
+                <mat-icon aria-hidden="false" fontIcon="delete_outline" class="delete-icon"></mat-icon>
+            </button>
+        </div>
+    </div>
+</div>
